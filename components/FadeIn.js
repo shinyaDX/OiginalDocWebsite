@@ -1,20 +1,29 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { createContext, useContext } from "react";
+import { motion, px } from "framer-motion";
 import { GiHidden } from "react-icons/gi";
+import { once } from "events";
 
-function FadeIn({ children }) {
+const FadeInStaggerContext = createContext(false);
+const viewport = { once: true, margin: "0px 0px -200px" };
+
+function FadeIn(props) {
+  const isInstaggerGroup = useContext(FadeInStaggerContext);
   return (
     <motion.div
       variants={{
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0 },
       }}
-      initial="hidden"
-      animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-    >
-      {children}
-    </motion.div>
+      {...(isInstaggerGroup
+        ? {}
+        : {
+            initial: "hidden",
+            whileInView: "visible",
+            viewport,
+          })}
+      {...props}
+    ></motion.div>
   );
 }
 

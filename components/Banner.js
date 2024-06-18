@@ -6,6 +6,7 @@ import bannerImage2 from "../public/bannerImg/banner2.jpg";
 import bannerImage3 from "../public/bannerImg/banner3.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import FadeIn from "./FadeIn";
 
 function Banner() {
   return (
@@ -14,27 +15,33 @@ function Banner() {
         <div className="text-white grid md:grid-cols-2 gap-20 place-items-center">
           {/* left */}
           <div className="flex flex-col gap-6">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-semibold">
-              無料で使えます
-            </h1>
-            <p className="text-sm tracking-wider xl:gap-10">
-              煩わしいレポート作成作業にさよならを告げませんか？「レポートアプリ」があなたの仕事を劇的に効率化します！
-              <br />
-              高度な技術やデザインスキルが不要。直感的なインタフェイスで、わずか数分でプロフェッショナルなレポートを簡単に作成できます。
-              <br />
-              事前に設計されたテンプレートを使用して、さまざまな種類のレポートを簡単に作成できます。売上分析、プレゼンテーション、プロジェクト進捗など、あらゆる要素に対応しています。
-            </p>
-            <div className="w-full p-6 xl:p-10 bg-white rounded-3xl flex flex-col lg:flex-row text-black justify-between gap-5">
-              <input
-                type="text"
-                placeholder="メールアドレス"
-                className="w-full h-12 border-[1px] border-gray-300 rounded-xl text-base text-gray-600 placeholder:tracking-wider px-4 outline-none hover:border-primary duration-300 focus-visible:border-primary
+            <FadeIn>
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-semibold">
+                無料で使えます
+              </h1>
+            </FadeIn>
+            <FadeIn>
+              <p className="text-sm tracking-wider xl:gap-10">
+                煩わしいレポート作成作業にさよならを告げませんか？「レポートアプリ」があなたの仕事を劇的に効率化します！
+                <br />
+                高度な技術やデザインスキルが不要。直感的なインタフェイスで、わずか数分でプロフェッショナルなレポートを簡単に作成できます。
+                <br />
+                事前に設計されたテンプレートを使用して、さまざまな種類のレポートを簡単に作成できます。売上分析、プレゼンテーション、プロジェクト進捗など、あらゆる要素に対応しています。
+              </p>
+            </FadeIn>
+            <FadeIn>
+              <div className="w-full p-6 xl:p-10 bg-white rounded-3xl flex flex-col lg:flex-row text-black justify-between gap-5">
+                <input
+                  type="text"
+                  placeholder="メールアドレス"
+                  className="w-full h-12 border-[1px] border-gray-300 rounded-xl text-base text-gray-600 placeholder:tracking-wider px-4 outline-none hover:border-primary duration-300 focus-visible:border-primary
                 "
-              />
-              <button className="w-full h-12 bg-black text-white rounded-xl font-medium hover:bg-primary duration-300 cursor-pointer">
-                無料で試す→
-              </button>
-            </div>
+                />
+                <button className="w-full h-12 bg-black text-white rounded-xl font-medium hover:bg-primary duration-300 cursor-pointer">
+                  無料で試す→
+                </button>
+              </div>
+            </FadeIn>
           </div>
 
           {/* right */}
