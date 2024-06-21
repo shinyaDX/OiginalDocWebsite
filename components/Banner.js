@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Container from "./container";
+import Container from "./container"; // パスを修正
 import bannerImage1 from "../public/bannerImg/banner1.jpg";
 import bannerImage2 from "../public/bannerImg/banner2.jpg";
 import bannerImage3 from "../public/bannerImg/banner3.jpg";
@@ -26,7 +26,7 @@ function Banner() {
                 <br />
                 高度な技術やデザインスキルが不要。直感的なインタフェイスで、わずか数分でプロフェッショナルなレポートを簡単に作成できます。
                 <br />
-                事前に設計されたテンプレートを使用して、さまざまな種類のレポートを簡単に作成できます。売上分析、プレゼンテーション、プロジェクト進捗など、あらゆる要素に対応しています。
+                事前に設計されたテンプレートを使用して、さまざま種類のレポートを簡単に作成できます。売上分析、プレゼンテーション、プロジェクト進捗など、あらゆる要素に対応しています。
               </p>
             </FadeIn>
             <FadeIn>
