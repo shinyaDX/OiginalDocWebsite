@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Container from "./container"; // パスを修正
+import Container from "./Container"; // パスを修正
 import bannerImage1 from "../public/bannerImg/banner1.jpg";
 import bannerImage2 from "../public/bannerImg/banner2.jpg";
 import bannerImage3 from "../public/bannerImg/banner3.jpg";
