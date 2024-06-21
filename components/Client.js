@@ -26,7 +26,7 @@ const clients = [
 
 function Client() {
   return (
-    <div className="mt-24 rounded[50px] bg-gray-950 py-20">
+    <div className="mt-24 rounded-[50px] bg-gray-950 py-20">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-white text-center text-sm font-semibold tracking-wider">

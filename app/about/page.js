@@ -14,7 +14,7 @@ function AboutPage() {
         </FadeIn>
         <FadeIn>
           <div className="flex flex-col md:flex-row items-center gap-10">
-            <p className="max-w-2xl">
+            <p>
               私たちのビジョンは、未来をより良くするための革新的な変革を実現することです。
               私たちは、技術の力と共に、世界を持続可能で効率的な場所に変え、人々の生活に
               革新的な価値を提供します。
@@ -26,7 +26,7 @@ function AboutPage() {
         </FadeIn>
         <FadeIn>
           <div className="flex flex-col md:flex-row items-center gap-10">
-            <p className="max-w-2xl">
+            <p>
               私たちは社会への貢献を大切にし、教育、環境、健康など、多くの分野で支援活動を展開します。
               私たちが提供するすべてのソリューションは、持続可能性、革新、そして価値創造を当てています。
             </p>
