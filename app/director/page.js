@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "@/components/container";
+import Container from "@/components/Container"; // パスを修正
 import Title from "@/components/Title";
 import Image from "next/image";
 

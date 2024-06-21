@@ -1,6 +1,6 @@
 "use client";
 
-import Container from "../../components/container"; // パスを修正
+import Container from "../../components/Container"; // パスを修正
 import React from "react";
 import Title from "@/components/Title";
 import FadeIn from "@/components/FadeIn";

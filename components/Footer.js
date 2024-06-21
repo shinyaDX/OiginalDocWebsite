@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "./container";
+import Container from "./Container"; // パスを修正
 import { FooterList } from "../constants/FooterList";
 import { FaFacebook, FaYoutube, FaInstagram, FaGithub } from "react-icons/fa";
 import { TbMinusVertical } from "react-icons/tb";

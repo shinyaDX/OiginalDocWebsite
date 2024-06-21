@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Container from "./container"; // パスを修正
+import Container from "./Container"; // パスを修正
 import logo1 from "@/public/clientImg/1.svg";
 import logo2 from "@/public/clientImg/2.svg";
 import logo3 from "@/public/clientImg/3.svg";
